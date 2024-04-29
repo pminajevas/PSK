@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <link rel="stylesheet" href="global.css" type="text/css"/>
+</h:head>
+<h:body>
+    <nav>
+        <h:link value="Tournaments" outcome="index"/>
+        <h:link value="Referees" outcome="referees"/>
+        <h:link value="Players" outcome="players"/>
+    </nav>
+    <h2>Players(MyBatis):</h2>
+    <ul>
+        <ui:repeat value="#{playersMyBatis.allPlayers}" var="player">
+            <li>
+                <h:form style="display: flex; justify-content: space-between; align-items: center">
+                    <section>
+                        <h:outputText style="font-weight: bold" value='#{player.name} "#{player.username}" #{player.surname}' />
+                        <ul>
+                            <ui:repeat value="#{player.tournaments}" var="playerTournament">
+                                <li>
+                                    <h:outputText style="display: block; font-weight: bold" value="#{playerTournament.name}"/>
+                                    <h:outputText style="display: block" value="Date: #{playerTournament.eventStartDate}" />
+                                    <h:commandButton style="cursor: pointer; color: white;" value="Leave tournament" actionListener="#{playersMyBatis.leave(player, playerTournament)}"/>
+                                </li>
+                            </ui:repeat>
+                        </ul>
+                    </section>
+                    <h:commandButton action="playersMyBatis?faces-redirect=true" style="cursor: pointer; color: white;" value="Delete player" actionListener="#{playersMyBatis.delete(player)}"/>
+                </h:form>
+            </li>
+        </ui:repeat>
+    </ul>
+    <h3>Add a new Player: </h3>
+    <h:form>
+        <div style="display: flex; justify-content: space-between;">
+            <h:outputLabel for="name" value="Name:" />
+            <h:inputText id="name" value="#{playersMyBatis.playerToCreate.name}" required="true" />
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <h:outputLabel for="surname" value="Surname:" />
+            <h:inputText id="surname" value="#{playersMyBatis.playerToCreate.surname}" required="true" />
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <h:outputLabel for="username" value="Username:" />
+            <h:inputText id="username" value="#{playersMyBatis.playerToCreate.username}" required="true" />
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <h:outputLabel for="email" value="Email:" />
+            <h:inputText id="email" value="#{playersMyBatis.playerToCreate.email}" required="true" />
+        </div>
+        <h4>Select tournaments:</h4>
+        <div style="display: flex; justify-content: space-between;">
+            <h:selectManyCheckbox id="chooseTournaments" value="#{playersMyBatis.selectedTournaments}">
+                <f:selectItems value="#{tournaments.availableTournaments}" var="tournament" itemValue="#{tournament.id}" itemLabel="Name: #{tournament.name} | Game: #{tournament.game}"/>
+            </h:selectManyCheckbox>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <h:commandButton action="playersMyBatis?faces-redirect=true" style="cursor: pointer; color: white;" value="Add new player" actionListener="#{playersMyBatis.create()}"/>
+        </div>
+    </h:form>
+</h:body>
+</html>
