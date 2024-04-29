@@ -1,3 +1,11 @@
+# Programų sistemų kūrimo 1 laboratorinis
+
+## Konfigūracija
+- OpenJDK 17.0.10
+- Boss/Wildfly 26.1.3.Final
+- H2 (driver 1.4.196)
+
+## TODO:
 - Pademonstruoti darbo su pasirinktais įrankiais (IDE, Application Server, Build tool, Version Control System) minimalų ciklą (**0.15**):
   - [x] naudojantis IDE padaryti minimalų pakeitimą projekto išeities tekstuose ir surinkti projektą, (**0.05 balo**)
   - [x] gebėti parodyti, kurioje vietoje IDE yra pasiekiamas dalykinis serveris (Application Server), kaip startuoti/sustabdyti dalykinį serverį, paleisti surinkimo rezultatus vykdymui dalykiniame serveryje, (**0.05 balo**)

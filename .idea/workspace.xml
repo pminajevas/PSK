@@ -10,59 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42bd71c-3d48-4ab5-8fcb-adb6c231b163" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/c56e725a-b436-4ee9-b88b-b0ee8bbf0994.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/c56e725a-b436-4ee9-b88b-b0ee8bbf0994/storage_v2/_src_/database/PIRMASLABDB.Rflz7Q.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/c56e725a-b436-4ee9-b88b-b0ee8bbf0994/storage_v2/_src_/database/PIRMASLABDB.Rflz7Q/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Referee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/PlayerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/PlayerTournamentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/RefereeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/TournamentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/PlayerTournament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/Referee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/Tournament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/MyBatisResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Players.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/PlayersMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Referees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PlayerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PlayerTournamentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/RefereeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/TournamentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pirmasLab-ds.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/players.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/playersMyBatis.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/referees.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +59,7 @@
     "JBoss/WildFly Server.JBoss/WildFly 32.0.0.Final.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/repos/pirmasLab/src/main/webapp",
@@ -253,7 +202,7 @@
       <workItem from="1714321845314" duration="5568000" />
       <workItem from="1714329756066" duration="802000" />
       <workItem from="1714330575021" duration="31000" />
-      <workItem from="1714330619452" duration="30410000" />
+      <workItem from="1714330619452" duration="30910000" />
     </task>
     <servers />
   </component>
