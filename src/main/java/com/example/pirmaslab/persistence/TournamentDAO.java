@@ -3,11 +3,12 @@ package com.example.pirmaslab.persistence;
 import com.example.pirmaslab.entities.Tournament;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-@ApplicationScoped
+@RequestScoped
 public class TournamentDAO {
 
     @Inject

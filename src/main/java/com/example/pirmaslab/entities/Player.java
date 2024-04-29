@@ -1,5 +1,6 @@
 package com.example.pirmaslab.entities;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,8 +11,8 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Player.findAll", query = "select p from Player as p")
 })
-@Getter
-@Setter
+@Getter @Setter
+@EqualsAndHashCode
 public class Player {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)

@@ -5,6 +5,7 @@ import com.example.pirmaslab.entities.Referee;
 import com.example.pirmaslab.entities.Tournament;
 import com.example.pirmaslab.persistence.RefereeDAO;
 import com.example.pirmaslab.persistence.TournamentDAO;
+import com.example.pirmaslab.services.DateChecker;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,6 +24,8 @@ public class Tournaments {
     private TournamentDAO tournamentDAO;
     @Inject
     private RefereeDAO refereeDAO;
+    @Inject
+    private DateChecker dateChecker;
 
     @Getter
     @Setter
@@ -62,8 +65,7 @@ public class Tournaments {
     }
 
     public boolean isRegistrationOpen(Tournament tournament) {
-        LocalDate currentDate = LocalDate.now();
-        return tournament != null && currentDate.isAfter(tournament.getRegStartDate()) && currentDate.isBefore(tournament.getRegEndDate());
+        return tournament != null && dateChecker.currentDateIsBetweenDates(tournament.getRegStartDate(), tournament.getRegEndDate());
     }
 
     public boolean isTournamentFull(Tournament tournament) {

@@ -2,12 +2,12 @@ package com.example.pirmaslab.persistence;
 
 import com.example.pirmaslab.entities.Player;
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-@ApplicationScoped
+@RequestScoped
 public class PlayerDAO {
 
     @Inject

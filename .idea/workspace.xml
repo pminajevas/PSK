@@ -10,8 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42bd71c-3d48-4ab5-8fcb-adb6c231b163" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/DateChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/Resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +209,7 @@
       <workItem from="1714321845314" duration="5568000" />
       <workItem from="1714329756066" duration="802000" />
       <workItem from="1714330575021" duration="31000" />
-      <workItem from="1714330619452" duration="30910000" />
+      <workItem from="1714330619452" duration="36600000" />
     </task>
     <servers />
   </component>

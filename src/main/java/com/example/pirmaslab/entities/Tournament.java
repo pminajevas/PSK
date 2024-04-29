@@ -1,5 +1,6 @@
 package com.example.pirmaslab.entities;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.util.List;
         @NamedQuery(name = "Tournament.findAll", query = "select t from Tournament as t")
 })
 @Getter @Setter
+@EqualsAndHashCode
 public class Tournament {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)

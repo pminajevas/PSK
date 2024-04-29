@@ -10,7 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceUnit;
 import javax.persistence.SynchronizationType;
 
-@ApplicationScoped
+@RequestScoped
 public class Resources {
 
     @PersistenceUnit
