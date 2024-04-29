@@ -22,6 +22,7 @@
                     <section>
                         <h:outputText style="display: block; font-weight: bold" value="#{tournament.name} " />
                         <h:outputText style="display: block; font-weight: bold" value="Game: #{tournament.game} " />
+                        <h:outputText style="display: block; font-weight: bold" value="Referee: #{tournament.referee.name} #{tournament.referee.surname}" />
                         <h:outputText style="display: block;" value="Registered/Allowed entries (#{tournaments.getNumberOfPlayersInTournament(tournament)}/#{tournament.maxPlayers})" />
                         <h:outputText style="display: block;" value="Registration start: #{tournament.regStartDate}, end: #{tournament.regEndDate}" />
                         <h:outputText style="display: block;" value="Tournament date: #{tournament.eventStartDate}" />
