@@ -8,7 +8,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 @RequestScoped
-public class PlayerDAO {
+public class PlayerDAO implements GenericDAO<Player> {
 
     @Inject
     private EntityManager em;
@@ -21,7 +21,7 @@ public class PlayerDAO {
         this.em.persist(player);
     }
 
-    public void deleteById(Long id) {
+    public void delete(Long id) {
         Player entityToDelete = findOne(id);
 
         if (entityToDelete != null) {

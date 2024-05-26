@@ -25,7 +25,11 @@
                         <h:outputText style="display: block;" value="Registered/Allowed entries (#{tournaments.getNumberOfPlayersInTournament(tournament)}/#{tournament.maxPlayers})" />
                         <h:outputText style="display: block;" value="Registration start: #{tournament.regStartDate}, end: #{tournament.regEndDate}" />
                         <h:outputText style="display: block;" value="Tournament date: #{tournament.eventStartDate}" />
+                        <h:outputText style="display: block;" value="#{tournamentLengthEstimator.getDurationEstimationStatus(tournament.id)}" />
+                        <h:outputText style="display: block;" value=" Join Engagement - #{tournament.tournamentEngagementCount}" />
                     </section>
+                    <h:button style="cursor: pointer; color: white; padding-right: 10px" value="Refresh" outcome="#{tournamentLengthEstimator.refreshStatus()}" rendered="#{tournamentLengthEstimator.shouldDisplayUpdate(tournament.id)}"/>
+                    <h:commandButton style="cursor: pointer; color: white; padding-right: 10px" value="Estimate" action="#{tournamentLengthEstimator.estimateDuration(tournament.id)}" rendered="#{!tournamentLengthEstimator.shouldDisplayUpdate(tournament.id)}" />
                     <h:commandButton rendered="#{!tournaments.hasParticipants(tournament)}" action="index?faces-redirect=true" style="cursor: pointer; color: white;" value="Delete" actionListener="#{tournaments.delete(tournament)}"/>
                 </h:form>
             </li>

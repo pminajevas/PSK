@@ -1,6 +1,7 @@
 package com.example.pirmaslab.usecases;
 
 import com.example.pirmaslab.entities.Referee;
+import com.example.pirmaslab.interceptors.Duration;
 import com.example.pirmaslab.persistence.RefereeDAO;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import java.io.Serializable;
 
 @Model
 @ViewScoped
+@Duration
 public class UpdateReferee implements Serializable {
     @Inject
     private RefereeDAO refereeDAO;

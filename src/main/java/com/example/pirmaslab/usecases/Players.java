@@ -2,6 +2,7 @@ package com.example.pirmaslab.usecases;
 
 import com.example.pirmaslab.entities.Tournament;
 import com.example.pirmaslab.entities.Player;
+import com.example.pirmaslab.interceptors.Duration;
 import com.example.pirmaslab.persistence.PlayerDAO;
 import com.example.pirmaslab.persistence.TournamentDAO;
 import lombok.Getter;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Model
+@Duration
 public class Players {
 
     @Inject
@@ -54,7 +56,7 @@ public class Players {
     @Transactional
     public void delete(Player player) {
         if (player != null && player.getId() != null) {
-            playerDAO.deleteById(player.getId());
+            playerDAO.delete(player.getId());
         }
     }
 

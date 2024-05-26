@@ -1,6 +1,7 @@
 package com.example.pirmaslab.usecases;
 
 import com.example.pirmaslab.entities.Referee;
+import com.example.pirmaslab.interceptors.Duration;
 import com.example.pirmaslab.persistence.RefereeDAO;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +13,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Model
+@Duration
 public class Referees {
 
     @Inject
@@ -41,7 +43,7 @@ public class Referees {
     @Transactional
     public void delete(Referee referee) {
         if (referee != null && referee.getId() != null) {
-            refereeDAO.deleteById(referee.getId());
+            refereeDAO.delete(referee.getId());
         }
     }
 

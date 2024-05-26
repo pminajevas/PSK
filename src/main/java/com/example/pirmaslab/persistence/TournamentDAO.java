@@ -6,10 +6,11 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequestScoped
-public class TournamentDAO {
+public class TournamentDAO implements GenericDAO<Tournament> {
 
     @Inject
     private EntityManager em;
@@ -18,13 +19,15 @@ public class TournamentDAO {
         return this.em.createNamedQuery("Tournament.findAll", Tournament.class).getResultList();
     }
 
+    @Transactional
     public void persist(Tournament tournament) {
         if (tournament != null && !tournament.getName().isEmpty()) {
             this.em.persist(tournament);
         }
     }
 
-    public void deleteById(Long id) {
+    @Transactional
+    public void delete(Long id) {
         Tournament entityToDelete = findOne(id);
 
         if (entityToDelete != null)
@@ -35,5 +38,10 @@ public class TournamentDAO {
 
     public Tournament findOne(Long id) {
         return this.em.find(Tournament.class, id);
+    }
+
+    @Transactional
+    public void update(Tournament tournament) {
+        this.em.merge(tournament);
     }
 }

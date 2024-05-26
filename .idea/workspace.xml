@@ -10,11 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42bd71c-3d48-4ab5-8fcb-adb6c231b163" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/UpdateReferee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateReferee.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/interceptors/Duration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/interceptors/DurationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/GenericDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDetailedDurationInDateTimeEstimator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDurationAsWordsEstimator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDurationEstimator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDurationInDateTimeEstimator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentEngagementCountDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/TournamentLengthEstimator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/referees.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/referees.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Referees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Referees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/UpdateReferee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/UpdateReferee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +41,7 @@
       <list>
         <option value="Jsp File" />
         <option value="jsf" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -206,7 +222,7 @@
       <workItem from="1714329756066" duration="802000" />
       <workItem from="1714330575021" duration="31000" />
       <workItem from="1714330619452" duration="38250000" />
-      <workItem from="1716712678445" duration="952000" />
+      <workItem from="1716712678445" duration="10268000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ package com.example.pirmaslab.usecases;
 import com.example.pirmaslab.entities.Player;
 import com.example.pirmaslab.entities.Referee;
 import com.example.pirmaslab.entities.Tournament;
+import com.example.pirmaslab.interceptors.Duration;
 import com.example.pirmaslab.persistence.RefereeDAO;
 import com.example.pirmaslab.persistence.TournamentDAO;
 import com.example.pirmaslab.services.DateChecker;
@@ -13,11 +14,11 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @Model
+@Duration
 public class Tournaments {
 
     @Inject
@@ -79,7 +80,7 @@ public class Tournaments {
     @Transactional
     public void delete(Tournament tournament) {
         if (tournament != null && tournament.getId() != null) {
-            tournamentDAO.deleteById(tournament.getId());
+            tournamentDAO.delete(tournament.getId());
         }
     }
 

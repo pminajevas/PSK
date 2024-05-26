@@ -47,6 +47,9 @@ public class Tournament {
     @JoinColumn(name = "REFEREE_ID")
     private Referee Referee;
 
+    @Basic
+    private Integer TournamentEngagementCount;
+
     @Version
     @Column(name = "OPT_LOCK_VERSION")
     private Integer version;

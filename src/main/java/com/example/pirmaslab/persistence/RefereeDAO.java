@@ -6,10 +6,11 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequestScoped
-public class RefereeDAO {
+public class RefereeDAO implements GenericDAO<Referee> {
 
     @Inject
     private EntityManager em;
@@ -18,11 +19,13 @@ public class RefereeDAO {
         return this.em.createNamedQuery("Referee.findAll", Referee.class).getResultList();
     }
 
+    @Transactional
     public void persist(Referee referee) {
         this.em.persist(referee);
     }
 
-    public void deleteById(Long id) {
+    @Transactional
+    public void delete(Long id) {
         Referee entityToDelete = findOne(id);
 
         if (entityToDelete != null) {
@@ -34,6 +37,7 @@ public class RefereeDAO {
         return this.em.find(Referee.class, id);
     }
 
+    @Transactional
     public void update(Referee referee) {
         this.em.merge(referee);
     }
