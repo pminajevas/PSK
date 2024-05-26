@@ -1,4 +1,4 @@
-# Programų sistemų kūrimo 1 laboratorinis
+# Programų sistemų kūrimo laboratoriniai
 
 ## Konfigūracija
 - OpenJDK 17.0.10
@@ -24,3 +24,15 @@
     -Naudojantis DataMapper/MyBatis (**0.1**)
   - [x] Reikia gebėti paaiškinti skirtumus/privalumus/trūkumus tarp ORM ir DataMapper (kada ką geriau naudoti). (**0.1**)
   - [x] Būtinos automatinės/deklaratyvios DB transakcijos (rankomis rašyti "begin()/commit()" negalima). (**0.05**)
+  - [x] Optimistinis rakinimas: pademonstruoti, kaip gaunamas OptimisticLockException, ir kaip programuotojas gali įgyvendinti tinkamą apdorojimą (0.3)
+    - Kas nutinka su einamąja transakcija, kai gaunamas OptimisticLockException?
+    - Kas nutinka su einamuoju EntityManager, kai gaunamas OptimisticLockException? Kaip išsaugoti esybę į DB po OptimisticLockException?
+  - [x] Asinchroninis komunikavimas: pateikti ilgą skaičiavimą atliekančio komponento (galima naudoti Thread.sleep(...) ir teisingo komunikavimo su juo pavyzdį (0.2)
+    -  Ar gali asinchroninis komponentas įsijungti į kvietėjo pradėtą transakciją?
+    -  Ar gali asinchroninis komponentas naudoti @RequestScoped EntityManager?
+  - Glass-box extensibility: pateikti po vieną pavyzdį:
+    - [x] CDI alternatives (@Alternative), alternatyvos pasirinkimas beans.xml faile (0.1)
+    - [x] CDI specialization (@Specializes) (0.1)
+    - [x] CDI Interceptor, interceptor'ių įjungimas/išjungimas beans.xml faile (0.1)
+    - [x] CDI Decorator, dekoratorių įjungimas/išjungimas beans.xml faile ( 0.1)
+  - [x] RESTful paslaugos pavyzdys: įgyvendinti RESTful paslaugas, leidžiančias gauti (GET), sukurti (POST) ir modifikuoti (PUT) kokią nors esybę duomenų bazėje (0.1)

@@ -10,26 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42bd71c-3d48-4ab5-8fcb-adb6c231b163" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/interceptors/Duration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/interceptors/DurationInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/GenericDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDetailedDurationInDateTimeEstimator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDurationAsWordsEstimator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDurationEstimator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentDurationInDateTimeEstimator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentEngagementCountDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/TournamentLengthEstimator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/rest/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/rest/DTO/RefereeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/rest/RefereeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/entities/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/PlayerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/TournamentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Referees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Referees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/Tournaments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/UpdateReferee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/UpdateReferee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentEngagementCountDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/services/TournamentEngagementCountDecorator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HTTP Request.generated-requests | #1.executor": "Run",
     "JBoss/WildFly Server.JBoss/WildFly 18.0.1.Final.executor": "Run",
     "JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor": "Run",
     "JBoss/WildFly Server.JBoss/WildFly 32.0.0.Final.executor": "Run",
@@ -122,7 +113,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="JBoss/WildFly 26.1.3.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.3.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -194,6 +188,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -222,7 +221,7 @@
       <workItem from="1714329756066" duration="802000" />
       <workItem from="1714330575021" duration="31000" />
       <workItem from="1714330619452" duration="38250000" />
-      <workItem from="1716712678445" duration="10268000" />
+      <workItem from="1716712678445" duration="14706000" />
     </task>
     <servers />
   </component>

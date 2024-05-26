@@ -13,7 +13,6 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Decorator
-@Dependent
 public abstract class TournamentEngagementCountDecorator implements GenericDAO<Player> {
     @Inject
     @Delegate

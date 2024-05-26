@@ -25,6 +25,7 @@ public class PlayerDAO implements GenericDAO<Player> {
         Player entityToDelete = findOne(id);
 
         if (entityToDelete != null) {
+            this.em.refresh(entityToDelete);
             this.em.remove(entityToDelete);
         }
     }

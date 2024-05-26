@@ -29,6 +29,7 @@ public class RefereeDAO implements GenericDAO<Referee> {
         Referee entityToDelete = findOne(id);
 
         if (entityToDelete != null) {
+            this.em.refresh(entityToDelete);
             this.em.remove(entityToDelete);
         }
     }

@@ -32,6 +32,7 @@ public class TournamentDAO implements GenericDAO<Tournament> {
 
         if (entityToDelete != null)
         {
+            this.em.refresh(entityToDelete);
             this.em.remove(entityToDelete);
         }
     }
