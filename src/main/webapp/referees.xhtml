@@ -19,13 +19,23 @@
             <li>
                 <h:form style="display: flex; justify-content: space-between; align-items: center">
                     <section>
-                        <h:outputText style="font-weight: bold" value="#{referee.name} #{referee.surname} (#{referee.email})" />
+                        <h:commandLink value="#{referee.name} #{referee.surname} (#{referee.email})"
+                                       action="updateReferee">
+                            <f:param name="id" value="#{referee.id}" />
+                            <f:param name="faces-redirect" value="true" />
+                        </h:commandLink>
                     </section>
                     <h:commandButton rendered="#{!referees.hasTournaments(referee)}" action="referees?faces-redirect=true" style="cursor: pointer; color: white;" value="Delete" actionListener="#{referees.delete(referee)}"/>
                 </h:form>
             </li>
         </ui:repeat>
     </ul>
+    <div style="display: flex; justify-content: center;">
+        <h:outputText
+                style="color: red"
+                value="Update failed, because it was updated by another user, please try again"
+                rendered="#{param['error'] == 'optimistic-lock-exception'}"/>
+    </div>
     <h3>Add a new Referee: </h3>
     <h:form>
         <div style="display: flex; justify-content: space-between;">

@@ -10,26 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42bd71c-3d48-4ab5-8fcb-adb6c231b163" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/usecases/UpdateReferee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateReferee.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/PlayerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/PlayerTournamentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/RefereeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/dao/TournamentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/PlayerTournament.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/Referee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/mybatis/model/Tournament.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/MyBatisResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PlayerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PlayerTournamentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/RefereeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/TournamentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/players.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/players.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/playersMyBatis.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pirmaslab/persistence/RefereeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/referees.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/referees.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,35 +54,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JBoss/WildFly Server.JBoss/WildFly 18.0.1.Final.executor&quot;: &quot;Run&quot;,
-    &quot;JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor&quot;: &quot;Run&quot;,
-    &quot;JBoss/WildFly Server.JBoss/WildFly 32.0.0.Final.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/repos/pirmasLab/src/main/webapp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JBoss/WildFly Server.JBoss/WildFly 18.0.1.Final.executor": "Run",
+    "JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor": "Run",
+    "JBoss/WildFly Server.JBoss/WildFly 32.0.0.Final.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/repos/pirmasLab",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.pirmaslab.entities" />
@@ -222,6 +206,7 @@
       <workItem from="1714329756066" duration="802000" />
       <workItem from="1714330575021" duration="31000" />
       <workItem from="1714330619452" duration="38250000" />
+      <workItem from="1716712678445" duration="952000" />
     </task>
     <servers />
   </component>

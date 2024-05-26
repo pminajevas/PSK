@@ -33,4 +33,8 @@ public class RefereeDAO {
     public Referee findOne(Long id) {
         return this.em.find(Referee.class, id);
     }
+
+    public void update(Referee referee) {
+        this.em.merge(referee);
+    }
 }
